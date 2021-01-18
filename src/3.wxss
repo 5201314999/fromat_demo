@@ -1,0 +1,391 @@
+.invite-page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  background-size: 100% 320rpx;
+  overflow: hidden;
+}
+
+.invite-page .kv_img {
+  width: 100%;
+  height: 320rpx;
+}
+
+.invite-page .part-box {
+  position: relative;
+  margin: 0 32rpx 52rpx;
+}
+
+.invite-page .part-box .box-hd {
+  position: absolute;
+  top: -18rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 448rpx;
+  height: 64rpx;
+  background: url(//pic.mdcdn.cn/h5/img/2020/invite_vip/bg_title.png) no-repeat;
+  background-size: 100% 100%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.invite-page .part-box .box-bd {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  padding-top: 67rpx;
+}
+
+.invite-page .product-wrapper {
+  position: relative;
+  top: -8rpx;
+}
+
+.invite-page .product-wrapper .box-bd {
+  padding-top: 0;
+}
+
+.invite-page .product-wrapper .product_img {
+  width: 686rpx;
+  height: 416rpx;
+}
+
+.invite-page .product-wrapper .info {
+  padding: 0 24rpx 31rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invite-page .product-wrapper .info .p_title {
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #1A1A1A;
+  text-align: center;
+  margin: 24rpx 0 14rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.invite-page .product-wrapper .info .p_desc {
+  font-size: 30rpx;
+  color: #1A1A1A;
+  line-height: 30rpx;
+  max-height: 84rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.invite-page .activity-wrapper .box-bd {
+  width: 686rpx;
+}
+
+.invite-page .activity-wrapper .box-bd .suc_nums {
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #00221C;
+  line-height: 38rpx;
+}
+
+.invite-page .activity-wrapper .box-bd .suc_nums .value {
+  color: #eb6859;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list {
+  margin: 28rpx 82rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item {
+  position: relative;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .img_wrp {
+  width: 118rpx;
+  height: 118rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .img_wrp .avatar_img {
+  width: 100%;
+  height: 100%;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .plus_share_btn {
+  display: block;
+  width: 118rpx;
+  height: 118rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
+  outline: 0;
+  background: url(//pic.mdcdn.cn/h5/img/2020/invite_vip/plus.png) no-repeat;
+  background-size: 118rpx 118rpx;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .plus_share_btn::after {
+  border: none;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .corner_tag {
+  position: absolute;
+  left: 0;
+  top: -4rpx;
+  background-image: linear-gradient(180deg, #FFCD68 0%, #FF9E37 100%);
+  border-radius: 4rpx 4rpx 65rpx 4rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  width: 66rpx;
+  height: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .queue_state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rpx;
+  width: 110rpx;
+  color: #FFFFFF;
+  font-size: 22rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  bottom: -20rpx;
+  left: 4rpx;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .success {
+  background-color: #e85040;
+}
+
+.invite-page .activity-wrapper .box-bd .avatar-list .avatar-item .fail {
+  background-color: #666666;
+}
+
+.invite-page .activity-wrapper .box-bd .activity_state {
+  margin: 0 82rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #E85040;
+}
+
+.invite-page .activity-wrapper .box-bd .activity_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 582rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  font-size: 40rpx;
+  color: #FFFFFF;
+  margin: 25rpx auto 41rpx;
+  background-image: linear-gradient(180deg, #FFAC5B 0%, #E85040 100%);
+  box-shadow: 0 2rpx 14rpx 0 rgba(254, 169, 90, 0.5);
+}
+
+.invite-page .activity-wrapper .box-bd .link_btn {
+  background: #FEA95A;
+  box-shadow: 0 2rpx 14rpx 0 rgba(254, 169, 90, 0.5);
+}
+
+.invite-page .activity-wrapper .box-bd .roadmap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 52rpx;
+}
+
+.invite-page .activity-wrapper .box-bd .roadmap .item {
+  width: 108rpx;
+  height: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D8D8D8;
+  border-radius: 36rpx;
+  font-size: 22rpx;
+  color: #666666;
+}
+
+.invite-page .activity-wrapper .box-bd .roadmap .arrow_right {
+  display: block;
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #D8D8D8;
+  border-right: 2rpx solid #D8D8D8;
+  transform: rotate(45deg);
+  margin-right: 10rpx;
+}
+
+.invite-page .activity-wrapper .box-hd .custom_time {
+  padding: 0 8rpx;
+  height: 40rpx;
+  background: #1A1A1A;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  color: #FFFFFF;
+}
+
+.invite-page .activity-wrapper .box-hd .out-colon {
+  font-size: 22rpx;
+  color: #1A1A1A;
+}
+
+.invite-page .rule-wrapper .box-bd {
+  height: 475rpx;
+  padding-bottom: 36rpx;
+}
+
+.invite-page .rule-wrapper .box-bd .scroll_view {
+  height: 100%;
+  overflow: scroll;
+}
+
+.invite-page .rule-wrapper .box-bd .content {
+  padding: 0 52rpx;
+  font-size: 22rpx;
+  color: #1A1A1A;
+  line-height: 30rpx;
+  white-space: pre-line;
+}
+
+.invite-page .prize-list-wrapper .box-bd {
+  height: 228rpx;
+  display: flex;
+  justify-content: center;
+  color: #1A1A1A;
+  font-size: 22rpx;
+  padding: 67rpx 0rpx 10rpx;
+  flex-wrap: wrap;
+}
+
+.invite-page .prize-list-wrapper .box-bd .item {
+  line-height: 48rpx;
+  text-align: center;
+  width: 33%;
+  display: block;
+}
+
+.dialog .mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  transition: all .3s ease-in;
+}
+
+.dialog .wrap {
+  position: fixed;
+  z-index: 5000;
+  top: 32rpx;
+  bottom: 32rpx;
+  left: 32rpx;
+  right: 32rpx;
+  text-align: center;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog .wrap .wrap-inner {
+  position: relative;
+}
+
+.dialog .wrap .wrap-inner .hd_logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.dialog .wrap .wrap-inner .hd_logo.normal {
+  top: -70rpx;
+  width: 210rpx;
+  height: 158rpx;
+}
+
+.dialog .wrap .wrap-inner .hd_logo.prized, .dialog .wrap .wrap-inner .hd_logo.unprized {
+  top: -74rpx;
+  width: 309rpx;
+  height: 170rpx;
+}
+
+.dialog .wrap .wrap-inner .bd {
+  position: relative;
+  background-color: #ffffff;
+  padding: 117rpx 48rpx 68rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  min-height: 300rpx;
+  width: 616rpx;
+  box-sizing: border-box;
+}
+
+.dialog .wrap .wrap-inner .bd .l_tip {
+  font-size: 36rpx;
+  color: #333333;
+}
+
+.dialog .wrap .wrap-inner .bd .s_tip {
+  font-size: 28rpx;
+  color: #666666;
+  margin-top: 8rpx;
+}
+
+.dialog .wrap .wrap-inner .bd .em_color {
+  color: #333333;
+}
+
+.dialog .wrap .wrap-inner .bd .home_link {
+  margin-top: 23rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.dialog .wrap .wrap-inner .bd .btn {
+  margin-top: 45rpx;
+  background: #333333;
+  background-image: linear-gradient(180deg, #FFAC5B 0%, #E85040 100%);
+  box-shadow: 0 2rpx 14rpx 4rpx rgba(254, 169, 90, 0.5);
+  border-radius: 50rpx;
+  font-size: 52rpx;
+  color: #FFFFFF;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog .wrap .wrap-inner .close_btn {
+  position: absolute;
+  bottom: -100rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.dialog .wrap .wrap-inner .close_btn .close_img {
+  width: 100%;
+  height: 100%;
+}
